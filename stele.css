@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #333;
+    background-color: #ffffff;
+    line-height: 1.5;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: #111827;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+    color: #3b82f6;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.nav a {
+    color: #9ca3af;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.nav a:hover {
+    color: #ffffff;
+}
+
+.auth-buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn-login {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.btn-signup {
+    background-color: #3b82f6;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.hero {
+    background-color: #111827;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 20px 120px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    color: #9ca3af;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+    font-size: 1.1rem;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn-started {
+    background-color: #ffffff;
+    color: #111827;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn-curriculum {
+    background-color: transparent;
+    color: #9ca3af;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    border: 1px solid #374151;
+    transition: border-color 0.2s, color 0.2s;
+}
+
+.btn-curriculum:hover {
+    border-color: #9ca3af;
+    color: #ffffff;
+}
+
+.learning-paths {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.learning-paths h2 {
+    font-size: 2rem;
+    color: #111827;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    color: #6b7280;
+    margin-bottom: 50px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;               
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: nowrap !important; 
+}
+
+.card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 30px 20px;     
+    flex: 1 1 0;            
+    min-width: 200px;       
+    max-width: 360px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-icon {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #6b7280;
+    font-size: 0.95rem;
+    margin-bottom: 30px;
+    flex-grow: 1;
+}
+
+.explore-link {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.card-red { border-top: 4px solid #ef4444; }
+.card-red h3, .card-red .explore-link { color: #ef4444; }
+
+.card-blue { border-top: 4px solid #3b82f6; }
+.card-blue h3, .card-blue .explore-link { color: #3b82f6; }
+
+.card-green { border-top: 4px solid #10b981; }
+.card-green h3, .card-green .explore-link { color: #10b981; }
+
+.card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+@media (max-width: 640px) {
+    .cards-container {
+        flex-wrap: wrap !important; 
+    }
+    .card {
+        flex: 1 1 100%;
+    }
+    .header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 40px;
+    }
+    .footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        padding: 20px 40px;
+    }
+}
